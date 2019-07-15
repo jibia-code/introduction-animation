@@ -1,0 +1,229 @@
+.jibia-introduction-animation .input-box, .jibia-introduction-animation #results-box {
+  padding: 16px;
+  border-radius: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.jibia-introduction-animation #results-box #customizable.loaded section .completion-stub, .jibia-introduction-animation #results-box #customizable.loaded section .product-stub .image-stub, .jibia-introduction-animation #results-box #customizable.loaded section .product-stub .line-stub {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.jibia-introduction-animation {
+  width: 100%;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-transition: visibility ease-in 1s;
+  transition: visibility ease-in 1s;
+  font-size: 24px;
+}
+
+.jibia-introduction-animation .input-box {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 12px;
+  height: 1.2em;
+  line-height: 1.2em;
+}
+
+.jibia-introduction-animation .input-box #input-text {
+  border-right: 2px solid cyan;
+  display: contents;
+}
+
+.jibia-introduction-animation .input-box #caret {
+  color: black;
+  font-weight: 100;
+  -webkit-animation: blinking 1s steps(1, end) infinite;
+          animation: blinking 1s steps(1, end) infinite;
+}
+
+.jibia-introduction-animation .input-box #caret.frozen {
+  -webkit-animation: unset;
+          animation: unset;
+}
+
+.jibia-introduction-animation #results-box {
+  opacity: 1;
+  -webkit-transition: opacity ease-in-out 0.24s, -webkit-transform ease-in-out 0.24s;
+  transition: opacity ease-in-out 0.24s, -webkit-transform ease-in-out 0.24s;
+  transition: opacity ease-in-out 0.24s, transform ease-in-out 0.24s;
+  transition: opacity ease-in-out 0.24s, transform ease-in-out 0.24s, -webkit-transform ease-in-out 0.24s;
+}
+
+.jibia-introduction-animation #results-box.closed {
+  opacity: 0;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.jibia-introduction-animation #results-box .result {
+  display: none;
+}
+
+.jibia-introduction-animation #results-box .result h1 {
+  margin: 0 0 8px;
+  color: #aaa;
+  font-size: 16px;
+}
+
+.jibia-introduction-animation #results-box .result.loaded {
+  display: unset;
+}
+
+.jibia-introduction-animation #results-box #word-completion #completion-list {
+  margin: 0 8px;
+  padding: 0;
+  list-style: none;
+}
+
+.jibia-introduction-animation #results-box #word-completion #completion-list li {
+  padding: 0.2em;
+}
+
+.jibia-introduction-animation #results-box #word-completion #completion-list li .written {
+  font-weight: bold;
+}
+
+.jibia-introduction-animation #results-box #word-completion #completion-list li .suggested {
+  color: #aaa;
+}
+
+.jibia-introduction-animation #results-box #word-completion #completion-list li:first-child {
+  background-color: #cfc;
+}
+
+.jibia-introduction-animation #results-box #customizable.loaded {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.jibia-introduction-animation #results-box #customizable.loaded section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px dashed #ddd;
+  padding: 8px;
+  margin-bottom: 8px;
+  -webkit-transition: -webkit-transform 1.5s ease;
+  transition: -webkit-transform 1.5s ease;
+  transition: transform 1.5s ease;
+  transition: transform 1.5s ease, -webkit-transform 1.5s ease;
+  background-color: white;
+}
+
+.jibia-introduction-animation #results-box #customizable.loaded section#completion-section.swapped {
+  -webkit-transform: translateY(127px);
+          transform: translateY(127px);
+}
+
+.jibia-introduction-animation #results-box #customizable.loaded section#products-section.swapped {
+  -webkit-transform: translateY(-101.375px);
+          transform: translateY(-101.375px);
+}
+
+.jibia-introduction-animation #results-box #customizable.loaded section .completion-stub {
+  width: 100%;
+  height: 0.8em;
+  margin-bottom: 8px;
+}
+
+.jibia-introduction-animation #results-box #customizable.loaded section .completion-stub:last-child {
+  margin-bottom: 0;
+}
+
+.jibia-introduction-animation #results-box #customizable.loaded section .product-stub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 8px;
+}
+
+.jibia-introduction-animation #results-box #customizable.loaded section .product-stub .image-stub {
+  min-width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+
+.jibia-introduction-animation #results-box #customizable.loaded section .product-stub .line-stub {
+  height: 0.8em;
+  width: 100%;
+  -ms-flex-negative: 2;
+      flex-shrink: 2;
+}
+
+.jibia-introduction-animation #results-box #customizable.loaded section .product-stub:last-child {
+  margin-bottom: 0;
+}
+
+.jibia-introduction-animation #results-box #customizable.loaded section:last-child {
+  margin-bottom: 0;
+}
+
+@-webkit-keyframes blinking {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes blinking {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes scrollbg {
+  from {
+    background-position-x: left;
+  }
+  to {
+    background-position-x: right;
+  }
+}
+
+@keyframes scrollbg {
+  from {
+    background-position-x: left;
+  }
+  to {
+    background-position-x: right;
+  }
+}
+/*# sourceMappingURL=introduction-animation.css.map */
