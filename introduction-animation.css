@@ -12,6 +12,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 .jibia-introduction-animation #results-box #customizable.loaded section .completion-stub, .jibia-introduction-animation #results-box #customizable.loaded section .product-stub .image-stub, .jibia-introduction-animation #results-box #customizable.loaded section .product-stub .line-stub {
@@ -27,6 +29,7 @@
   -webkit-transition: visibility ease-in 1s;
   transition: visibility ease-in 1s;
   font-size: 24px;
+  line-height: 1.2em;
 }
 
 .jibia-introduction-animation .input-box {
@@ -36,7 +39,6 @@
           flex-direction: row;
   margin-bottom: 12px;
   height: 1.2em;
-  line-height: 1.2em;
 }
 
 .jibia-introduction-animation .input-box #input-text {
@@ -47,8 +49,8 @@
 .jibia-introduction-animation .input-box #caret {
   color: black;
   font-weight: 100;
-  -webkit-animation: blinking 1s steps(1, end) infinite;
-          animation: blinking 1s steps(1, end) infinite;
+  -webkit-animation: ia-blinking 1s steps(1, end) infinite;
+          animation: ia-blinking 1s steps(1, end) infinite;
 }
 
 .jibia-introduction-animation .input-box #caret.frozen {
@@ -90,19 +92,20 @@
   list-style: none;
 }
 
-.jibia-introduction-animation #results-box #word-completion #completion-list li {
+.jibia-introduction-animation #results-box #word-completion #completion-list .completion-list-item {
+  font-size: 24px;
   padding: 0.2em;
 }
 
-.jibia-introduction-animation #results-box #word-completion #completion-list li .written {
+.jibia-introduction-animation #results-box #word-completion #completion-list .completion-list-item .written {
   font-weight: bold;
 }
 
-.jibia-introduction-animation #results-box #word-completion #completion-list li .suggested {
+.jibia-introduction-animation #results-box #word-completion #completion-list .completion-list-item .suggested {
   color: #aaa;
 }
 
-.jibia-introduction-animation #results-box #word-completion #completion-list li:first-child {
+.jibia-introduction-animation #results-box #word-completion #completion-list .completion-list-item:first-child {
   background-color: #cfc;
 }
 
@@ -185,7 +188,7 @@
   margin-bottom: 0;
 }
 
-@-webkit-keyframes blinking {
+@-webkit-keyframes ia-blinking {
   from {
     opacity: 0;
   }
@@ -197,7 +200,7 @@
   }
 }
 
-@keyframes blinking {
+@keyframes ia-blinking {
   from {
     opacity: 0;
   }
@@ -209,7 +212,7 @@
   }
 }
 
-@-webkit-keyframes scrollbg {
+@-webkit-keyframes ia-scrollbg {
   from {
     background-position-x: left;
   }
@@ -218,7 +221,7 @@
   }
 }
 
-@keyframes scrollbg {
+@keyframes ia-scrollbg {
   from {
     background-position-x: left;
   }

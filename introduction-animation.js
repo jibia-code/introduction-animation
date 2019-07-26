@@ -109,6 +109,7 @@ function updateResultsCompletion(currentText, completions) {
     removeAllChildren(completionElement);
     for (var completion of completions) {
       var listElement = document.createElement("li");
+      listElement.classList.add("completion-list-item");
       addSpanToParentNode(listElement, currentText, "written");
       addSpanToParentNode(
         listElement,
