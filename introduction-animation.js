@@ -152,21 +152,21 @@ function animationLoop() {
     await sleep(2000);
     await deleteAllSearchContent();
 
-    // await sleep(1000);
-    // await preloadResultSection("word-completion");
-    // await writeStringInSearch("auto", [
-    //   "autocomplete",
-    //   "autobanden",
-    //   "automatische incasso"
-    // ]);
-    // await sleep(2000);
-    // await deleteAllSearchContent();
+    await sleep(1000);
+    await preloadResultSection("word-completion");
+    await writeStringInSearch("auto", [
+      "autocomplete",
+      "autobanden",
+      "automatische incasso"
+    ]);
+    await sleep(2000);
+    await deleteAllSearchContent();
 
-    // await sleep(1000);
-    // await preloadResultSection("spelling-checker");
-    // await writeStringInSearch("hgoree covnertie");
-    // await sleep(2000);
-    // await deleteAllSearchContent();
+    await sleep(1000);
+    await preloadResultSection("spelling-checker");
+    await writeStringInSearch("hgoree covnertie");
+    await sleep(2000);
+    await deleteAllSearchContent();
 
     resolve();
   });
