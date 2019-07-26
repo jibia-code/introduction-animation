@@ -80,6 +80,7 @@
   margin: 0 0 8px;
   color: #aaa;
   font-size: 16px;
+  line-height: 1.2em;
 }
 
 .jibia-introduction-animation #results-box .result.loaded {
@@ -117,6 +118,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.jibia-introduction-animation #results-box #customizable.loaded * {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 .jibia-introduction-animation #results-box #customizable.loaded section {

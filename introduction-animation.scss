@@ -62,6 +62,7 @@
         margin: 0 0 8px;
         color: #aaa;
         font-size: 16px;
+        line-height: 1.2em;
       }
 
       &.loaded {
@@ -97,6 +98,10 @@
     #customizable.loaded {
       display: flex;
       flex-direction: column;
+
+      * {
+        box-sizing: content-box;
+      }
 
       section {
         display: flex;
